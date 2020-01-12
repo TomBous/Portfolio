@@ -1,0 +1,320 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+/* --------------------------------- COVER ------------------------*/
+#cover {
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    min-height: 75%;
+}
+
+/* ----------------------------------SECTION 1 -------------------*/
+#section1-before {
+    background-color: #b6cfe5;
+    display: flex;
+}
+#section1-before img {
+    width: 100%;
+}
+#section1-before .button {
+  font-size: 4em;
+  color: lightcyan;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: lightcoral;
+}
+#section1-before .button:hover {
+     animation: heartbeat 1.5s ease-in-out infinite both;
+}
+#section1 {
+    background-color: #244256;
+    height: 800px;
+    font-family: 'Open Sans', sans-serif;
+}
+#section1 h1 {
+    font-size: 6em;
+    color:#99d4eb;
+    margin-bottom: 1em;
+}
+#section1-after {
+    background-color: floralwhite;
+}
+#section1-after img {
+    width: 100%;
+}
+
+.button-container {
+    width: 100%;
+    position: absolute;
+    bottom: 190px;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------------- SECTION 2 -------------------*/
+#section2 {
+    background-color: floralwhite;
+    height: 800px;
+}
+
+/* --------------------------------- SECTION 3 ------------------- */
+#section3-before {
+    background-color: floralwhite;
+    display: flex;
+}
+#section3-before img {
+    width: 100%;
+}
+#section3 {
+    background-color: #5e81ac;
+    height: 800px;
+}
+#section3-after {
+    background-color: floralwhite;
+}
+#section3-after img {
+    width: 100%;
+}
+#section3 h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: floralwhite;
+    background: url(../img/nuage.svg) center no-repeat;
+    line-height: 4em;
+    background-size: contain;
+}
+#section3 h1:before {
+    content: "\201C";
+    display: inline-block;
+    transform: rotate(-15deg);
+    font-size: 2em;
+}
+#section3 h1:after {
+    content: "\201D";
+    display: inline-block;
+    transform: rotate(15deg);
+    font-size: 2em;
+}
+/* --------------------------------- SECTION 4 --------------------*/
+#section4 {
+    height: 500px;
+    background-color: floralwhite;
+}
+
+/*---------------------------------- CONTENU ---------------------- */
+.mg-top-3 {
+    margin-top: 3em;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.spacebtw {
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h2 {
+    font-size: 6em;
+    color:#C3C3C3;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Black Ops One', cursive;
+}
+.skill {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.pastille {
+    background-color: rgba(138, 138, 138, 0.3);
+    border-radius: 125px;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.little-h2 {
+    font-size: 25px;
+    line-height: 45px;
+}
+/* --------------------------------- Progress Bar -----------------*/
+.ldBar {
+    width: 150px!important;
+    height: 130px!important;
+}
+.ldBar path.mainline {
+    stroke-width: 5;
+    stroke-linecap: round;
+
+}
+.ldBar path.baseline {
+    stroke-width: 2;
+    stroke: #999;
+    stroke-linecap: round;
+  }
+  .ldBar-label {
+    color: #FFF;
+    font-family: 'Black Ops One', cursive;
+    font-size: 4em;
+    font-weight: 600;
+  }
+/* --------------------------------- FORMULAIRE ------------------ */
+.contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .contact-form .form-block {
+      padding: 15px;
+      width: 400px;
+  }
+  .contact-form .input-block {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    margin-bottom: 20px;
+    color: #808080;
+    border-radius: 15px;
+    border: 5px dotted rgb(128, 128, 128);
+    transition: all 0.5s;
+  }
+  textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    margin-bottom: 20px;
+    color: rgb(110, 110, 110);
+    border-radius: 15px;
+    border: 5px dotted rgb(128, 128, 128);
+    width: 370px;
+    font-size: 3em;
+    transition: all 0.5s;
+  }
+  .contact-form .input-block.invalid, textarea.invalid {
+    border: 5px dotted rgb(235, 129, 129);
+  }
+  .contact-form .input-block.valid, textarea.valid {
+    border: 5px dotted rgb(85, 131, 78);
+  }
+  .contact-form .input-block input {
+    text-align: center;
+  }
+  .contact-form .input-block input:focus {
+    background-color: #fff;
+    outline: 0;
+    text-align: center;
+  }
+  
+  .contact-form .input-block .form-control {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .contact-form .square-button {
+    background-color: #5e81ac;
+    color: #ebebeb;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    text-align: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 40px;
+    height: 60px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .contact-form .square-button:hover {
+    background-color: #87addb;
+    color: #ffffff;
+    animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+
+  /*---------------------------------- ANIMISTA -----------------------------------*/
+
+  .shake-top {
+	animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+ @keyframes shake-top {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 0;
+    }
+    10% {
+      transform: rotate(1deg);
+    }
+    20%,
+    40%,
+    60% {
+      transform: rotate(-2deg);
+    }
+    30%,
+    50%,
+    70% {
+      transform: rotate(2deg);
+    }
+    80% {
+      transform: rotate(-1deg);
+    }
+    90% {
+      transform: rotate(1deg);
+    }
+  }
+  .heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.97);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}

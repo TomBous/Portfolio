@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg10"
+   viewBox="0 0 100 125"
+   y="0px"
+   x="0px"
+   version="1.1">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs14" />
+  <g
+     id="g4"
+     transform="translate(0,-952.36218)">
+    <path
+       id="path2"
+       transform="translate(0,952.36218)"
+       d="M 81.8125 22 A 2.0021961 2.0021961 0 1 0 82 26 L 89.65625 26 L 68.15625 53.6875 C 67.183245 53.263547 66.123101 53 65 53 C 62.998955 53 61.157913 53.770811 59.75 55 L 47.53125 46.65625 C 47.82566 45.825926 48 44.926986 48 44 C 48 39.60542 44.394592 36 40 36 C 35.605408 36 32 39.60542 32 44 C 32 45.373312 32.350514 46.679272 32.96875 47.8125 L 16.3125 63.28125 C 15.065865 62.477115 13.583134 62 12 62 C 7.6054079 62 4 65.6054 4 70 C 4 74.3946 7.6054079 78 12 78 C 16.394592 78 20 74.3946 20 70 C 20 68.611378 19.631118 67.329675 19 66.1875 L 35.6875 50.71875 C 36.934134 51.522885 38.416863 52 40 52 C 42.024796 52 43.898232 51.255306 45.3125 50 L 57.5 58.28125 C 57.18443 59.137561 57 60.038681 57 61 C 57 65.3946 60.605408 69 65 69 C 69.394592 69 73 65.3946 73 61 C 73 59.171846 72.357631 57.50851 71.3125 56.15625 L 92 29.5625 L 92 36 A 2.0002002 2.0002002 0 1 0 96 36 L 96 24 A 2.0002002 2.0002002 0 0 0 94 22 L 82 22 A 2.0002002 2.0002002 0 0 0 81.8125 22 z M 40 40 C 42.232824 40 44 41.76718 44 44 C 44 46.23282 42.232816 48 40 48 C 37.767184 48 36 46.23282 36 44 C 36 41.76718 37.767176 40 40 40 z M 65 57 C 67.232824 57 69 58.7672 69 61 C 69 63.2328 67.232824 65 65 65 C 62.767176 65 61 63.2328 61 61 C 61 58.7672 62.767176 57 65 57 z M 12 66 C 14.232824 66 16 67.7672 16 70 C 16 72.2328 14.232824 74 12 74 C 9.7671755 74 8 72.2328 8 70 C 8 67.7672 9.7671755 66 12 66 z "
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;opacity:1;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.00000047999999970;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+  </g>
+</svg>
