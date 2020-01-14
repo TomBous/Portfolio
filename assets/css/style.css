@@ -157,6 +157,22 @@ h2 {
     font-size: 25px;
     line-height: 45px;
 }
+
+.upper {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 2em;
+    color:#FFF;
+    text-shadow: 0 0 1px#999;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.appear {
+  opacity: 1;
+}
 /* --------------------------------- Progress Bar -----------------*/
 .ldBar {
     width: 150px!important;

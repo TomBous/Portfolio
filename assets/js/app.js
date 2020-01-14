@@ -55,6 +55,19 @@ window.onload = function() {
             }
 
         };
+    
+        var upperAppear = function() {
+            upper = document.getElementsByClassName("upper");
+            console.log(upper);
+              var y = window.scrollY;
+              if (y >= 200) {
+                upper[0].classList.add("appear");
+              } else {
+                upper[0].classList.remove("appear")
+              }
+            }
+        
+            window.addEventListener("scroll", upperAppear);
 
     function AnimateBarres2() {
         const Bars2 = {
