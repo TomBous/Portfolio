@@ -18,36 +18,35 @@ window.onload = function() {
             
             // Animation de validation
             if (!regexUsername.test(name)) {
-                inputs[0].parentNode.classList.add('invalid');
-                inputs[0].parentNode.classList.add('shake-top');
+              inputs[0].parentNode.classList.add("invalid");
+              inputs[0].parentNode.classList.add("shake-top");
             } else {
-                inputs[0].parentNode.classList.add('valid');
+              inputs[0].parentNode.classList.add("valid");
             }
             inputs[0].onclick = function() {
-                inputs[0].parentNode.classList.remove('invalid');
-                inputs[0].parentNode.classList.remove('valid');
-            }
+              inputs[0].parentNode.classList.remove("invalid");
+              inputs[0].parentNode.classList.remove("valid");
+            };
             if (!regexEmail.test(email)) {
-                inputs[1].parentNode.classList.add('invalid');
-                inputs[1].parentNode.classList.add('shake-top');
+              inputs[1].parentNode.classList.add("invalid");
+              inputs[1].parentNode.classList.add("shake-top");
             } else {
-                inputs[1].parentNode.classList.add('valid');
+              inputs[1].parentNode.classList.add("valid");
             }
             inputs[1].onclick = function() {
-                inputs[1].parentNode.classList.remove('invalid');
-                inputs[1].parentNode.classList.remove('valid');
-            }
+              inputs[1].parentNode.classList.remove("invalid");
+              inputs[1].parentNode.classList.remove("valid");
+            };
             if (!regexText.test(message)) {
-                textarea.classList.add('invalid');
-                textarea.classList.add('shake-top');
-
+              textarea.classList.add("invalid");
+              textarea.classList.add("shake-top");
             } else {
-                textarea.classList.add('valid');
+              textarea.classList.add("valid");
             }
             textarea.onclick = function() {
-                textarea.classList.remove('invalid');
-                textarea.classList.remove('valid');
-            }
+              textarea.classList.remove("invalid");
+              textarea.classList.remove("valid");
+            };
             // SEND
 
             if (regexUsername.test(name) && regexEmail.test(email) && regexText.test(message)) {
@@ -57,17 +56,17 @@ window.onload = function() {
         };
     
         var upperAppear = function() {
-            upper = document.getElementsByClassName("upper");
-            console.log(upper);
-              var y = window.scrollY;
-              if (y >= 200) {
-                upper[0].classList.add("appear");
-              } else {
-                upper[0].classList.remove("appear")
-              }
-            }
+          upper = document.getElementsByClassName("upper");
+          console.log(upper);
+          var y = window.scrollY;
+          if (y >= 200) {
+            upper[0].classList.add("appear");
+          } else {
+            upper[0].classList.remove("appear");
+          }
+        };
         
-            window.addEventListener("scroll", upperAppear);
+        //    window.addEventListener("scroll", upperAppear);
 
     function AnimateBarres2() {
         const Bars2 = {
@@ -80,9 +79,6 @@ window.onload = function() {
         const hauteurEcran = window.innerHeight / 1.5;
         if (top + 250 > hauteurEcran*2) {
             Object.keys(Bars2).forEach(function (item) {
-                var barre = document.getElementById(item);
-                const barrePosition = barre.getBoundingClientRect().top;
-                const hauteurEcran = window.innerHeight / 1.5;
             var bar = new ldBar(`#${item}`,{
                 "stroke": "data:ldbar/res,gradient(0,5,#9df,#9fd,#df9,#fd9)",
                 "stroke-width": 10,
@@ -95,19 +91,17 @@ window.onload = function() {
         console.log(top + " " + hauteurEcran*2)
     }
     function AnimateBarres1() {
+      console.log("toto!");
             const Bars1 = {
                 'html' : 90,
                 'css' : 80,
                 'php' : 30,
-                'js' : 45,
-            }            
+                'js' : 45
+            }           
                 var top = this.scrollY;
                 const hauteurEcran = window.innerHeight / 1.5;
                 if (top + 100 > hauteurEcran) {
                     Object.keys(Bars1).forEach(function (item) {
-                        var barre = document.getElementById(item);
-                        const barrePosition = barre.getBoundingClientRect().top;
-                        const hauteurEcran = window.innerHeight / 1.5;
                     var bar = new ldBar(`#${item}`,{
                         "stroke": "data:ldbar/res,gradient(0,5,#9df,#9fd,#df9,#fd9)",
                         "stroke-width": 10,
@@ -118,26 +112,7 @@ window.onload = function() {
                     });
                     window.addEventListener('scroll', AnimateBarres2);
                 }
-                console.log(top + " " + hauteurEcran*2)
-            /*
-            Object.keys(Bars).forEach(function (item) {
-               var barre = document.getElementById(item);
-               const barrePosition = barre.getBoundingClientRect().top;
-               const hauteurEcran = window.innerHeight / 1.5;
 
-               if (barrePosition < hauteurEcran) {
-                    var bar = new ldBar(`#${item}`,{
-                        "stroke": "data:ldbar/res,gradient(0,5,#9df,#9fd,#df9,#fd9)",
-                        "stroke-width": 10,
-                        "value": 0
-                        });
-                    bar.set(Bars[item]);
-                    window.removeEventListener('scroll', AnimateBarres);
-                    setTimeout(AnimateNext, 2000);
-               }
-            });
-            */
     }
-
    window.addEventListener('scroll', AnimateBarres1);
 }
