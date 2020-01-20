@@ -57,6 +57,7 @@
                 formdata.append("name", name);
                 formdata.append("email", email);
                 formdata.append("msg", message);
+                console.log(formdata);
                 var ajax = new XMLHttpRequest();
                 ajax.open("POST", "send.php");
                 ajax.onreadystatechange = function() {
@@ -77,7 +78,6 @@
     
         var upperAppear = function() {
           upper = document.getElementsByClassName("upper");
-          console.log(upper);
           var y = window.scrollY;
           if (y >= 200) {
             upper[0].classList.add("appear");
@@ -86,7 +86,7 @@
           }
         };
         
-        //    window.addEventListener("scroll", upperAppear);
+        window.addEventListener("scroll", upperAppear);
 
 
     function AnimateBarres2() {
@@ -109,10 +109,8 @@
             window.removeEventListener('scroll', AnimateBarres2);
             });
         }
-        console.log(top + " " + hauteurEcran*2)
     }
     function AnimateBarres1() {
-      console.log("toto!");
             const Bars1 = {
                 'html' : 90,
                 'css' : 80,
