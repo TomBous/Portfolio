@@ -127,7 +127,7 @@
         <section id="section4">
 
           <div class="container">
-          <form action="" class="contact-form" id="register-form">
+          <form onsubmit="submitForm(); return false;" class="contact-form" id="register-form">
             <div class="form-block">
                 <div class="input-block">
                     <input type="text" placeholder="Prénom" class="form-control">
@@ -138,7 +138,7 @@
                 <textarea name="textarea" rows="5" cols="30" placeholder="Votre message ici"></textarea>
             </div>
             <div class="">
-                  <button type="button" class="square-button">Contacter</button>
+                  <button type="submit" class="square-button">Contacter</button>
             </div>
           </form>
         </div>
