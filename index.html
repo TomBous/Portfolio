@@ -14,39 +14,40 @@
         <link rel="stylesheet" href="./assets/js/dist/loading-bar.css">
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-
-      <div class="demo">
-        <svg class="sidebar" viewBox="0 0 300 500">
-          <path class="s-path" fill="#fff" d="M0,0 50,0 a0,250 0 1,1 0,500 L0,500" />
-        </svg>
-        <div class="static">
-          <div class="static__text">Tirez pour ouvrir le menu</div>
-        </div>
-        <div class="sidebar-content">
-          <h2 id="sidebar-title">Menu</h2>
-          <ul>
-              <li>Compétences</li>
-              <li>Portfolio</li>
-              <li>Formation</li>
-              <li>Contact</li>
+      <div class="animate-container">
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul class="nav-items">
+            <li class="nav-title">Pages</li>
+            <li><a href="#" class="nav-link">Compétences</a></li>
+            <li><a href="#" class="nav-link">Portfolio</a></li>
+            <li><a href="#" class="nav-link">Formation</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="#" class="nav-link">News</a></li>
           </ul>
-        </div>
-        <div class="chat">
-          
-        </div>
+        <div class="sidebar-separator"></div>
+        <ul class="nav-items">
+          <li class="nav-title">More</li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#" class="nav-link">Support</a></li>
+          <li><a href="#" class="nav-link">Careers</a></li>
+        </ul>
+        </nav>
+      </aside>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
 
-
-
-
-
+      <main class="main" role="main">
         <section id="cover">
-
+        <a href="#cover" class="upper"><i class="fa fa-arrow-circle-o-up fa-3x" aria-hidden="true"></i></a>
         </section>
 
         <div id="section1-before">
@@ -144,6 +145,8 @@
         </div>
 
         </section>
+        </main>
+        </div>
 
         
         <script src="./assets/js/app.js" async defer></script>
