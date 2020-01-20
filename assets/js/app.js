@@ -1,6 +1,6 @@
 
 
-window.onload = function() {
+
 
     
 
@@ -87,7 +87,7 @@ window.onload = function() {
               }
             }
         
-            window.addEventListener("scroll", upperAppear);
+        window.addEventListener("scroll", upperAppear);
 
     function AnimateBarres2() {
         const Bars2 = {
@@ -160,4 +160,4 @@ window.onload = function() {
     }
 
    window.addEventListener('scroll', AnimateBarres1);
-}
+
