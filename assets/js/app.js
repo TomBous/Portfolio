@@ -57,32 +57,35 @@
                 formdata.append("name", name);
                 formdata.append("email", email);
                 formdata.append("msg", message);
-                console.log(formdata);
-                var ajax = new XMLHttpRequest();
-                ajax.open("POST", "send.php");
-                ajax.onreadystatechange = function() {
-                    if(ajax.readyState == 4 && ajax.status == 200) {
-                        if(ajax.responseText == "success") {
-                            envoyer.innerHTML = "Envoyé !!";
-                        } else {
-                            envoyer.innerHTML = ajax.responseText;
-                            envoyer.disabled = false;
-                        }
+                var request = new XMLHttpRequest();
+                request.open("POST", "./assets/php/send.php");
+                request.send(formdata);   
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                       
+                            envoyer.innerHTML = "Reçu 5/5 !";
+                        
                     }
                 }
-            ajax.send(formdata);    
+                 
 
             }
 
         };
     
         var upperAppear = function() {
+          //Apparition bouton upper
           upper = document.getElementsByClassName("upper");
           var y = window.scrollY;
           if (y >= 200) {
             upper[0].classList.add("appear");
           } else {
             upper[0].classList.remove("appear");
+          }
+          // Apparition block formations
+          if (y >= 1300) {
+            document.getElementById('formations').classList.add("slideLeft");
+            document.getElementById('xp').classList.add("slideRight");
           }
         };
         
@@ -134,4 +137,6 @@
 
     }
    window.addEventListener('scroll', AnimateBarres1);
+
+
 
