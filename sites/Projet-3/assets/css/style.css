@@ -1,0 +1,153 @@
+
+
+/*------------------------- STRUCTURE ---*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+section {
+    width: 100vw;
+}
+/*
+section#section1 {
+    background-color:#11ABBF;
+    color: #EAEAEA;
+     padding: 3em 0px; 
+}
+*/
+section#section2 {
+    background-color:#27212D;
+}
+
+section#section4 {
+    background-color:#EAEAEA;
+    padding: 0px 3em;
+}
+
+h1 {
+    font-size: 6vw;
+    margin-top: 0px;
+}
+
+/*--------------------------- HEADER ----------*/
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 20px;
+    margin: 0px;
+}
+nav ul li {
+    padding: 0px 2em;
+}
+
+header {
+    background-color: #373C3F;
+    color: #EAEAEA;
+}
+
+#navbarToggleExternalContent ul {
+    list-style: none;
+    line-height: 2.5em;
+}
+/* ----------------------------- MAIN ------ */
+
+.carousel-item img {
+    width: 60vw;
+}
+
+/* #section1>div {
+    margin: 4em 1em;
+}
+*/
+.rowflex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.centrer {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grey {
+    width: 70%;
+    text-align: center;
+}
+#section2 h2 {
+    color: rgb(194, 170, 218);
+    font-size: 3vw;
+}
+
+.container-rose {
+    background-color: #BC3184;
+    width: 30%;
+    color: #EAEAEA;
+    text-align: center;
+    padding: 8vw 0px;
+}
+/* ---------------------- Section 3------*/
+#section3 img {
+    width: 33vw;
+}
+
+.container-violet {
+    background-color: purple;
+    width: 34vw;
+    text-align: center;
+    color: #EAEAEA;
+}
+
+#section3 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* ----------------------- Section 4 ----- */ 
+#section4 p {
+    width: 33vw;
+    line-height: 1.5em;
+    padding: 0px 2em;
+    color: #555;
+}
+
+#section4 h2 {
+    margin: 0px;
+    padding: 1em 0.4em 1em 1em;
+    color: rgb(13, 150, 168);
+}
+
+#nav-boot {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    #section3 {
+        flex-flow: column wrap;
+    }
+    #section3 img {
+        width: 100%;
+    }
+    .container-violet {
+        width: 100vw;
+        height: 86vw;
+    }
+    #section4 p {
+        width: 80vw;
+    }
+    
+
+}
+
+@media screen and (max-width: 800px) {
+    #nav-me {
+        display: none;
+    }
+    #nav-boot {
+        display: block;
+    }
+}

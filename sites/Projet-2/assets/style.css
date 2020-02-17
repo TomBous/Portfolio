@@ -1,0 +1,247 @@
+
+/* Global CSS*/
+section {
+    padding: 40px 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.flex-row-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 15px 10px;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans';
+    color: rgb(73, 73, 73);
+}
+
+.l80 {
+    width: 80vw;
+    margin: 0 auto;
+} 
+
+.barre {
+    height: 3px;
+    width: 50px;
+    margin: 5px 0px 10px 0px;
+    background-color: red;
+    display: inline-block;
+}
+h2 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* HEADER */
+.upper {
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3B3B3B;
+    color: #999;
+}
+
+.nom {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0 1.5em;
+    list-style: none;
+}
+/* ----------------------------       Nav Animation */
+nav a {
+    text-decoration: none;
+    color: #999;
+    transition: color 1s ease-out;
+}
+nav a:hover {
+    color:red;
+}
+
+#cover {
+    background-image: url(./img/cover-bg.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cover h1 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+}
+#cover div {
+    text-align: center;
+}
+#cover i {
+    color: red;
+}
+/* MAIN */
+
+#propos {
+    background-color: #f6f5f4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#propos > div {
+    max-width: 40%;
+    margin-right: 5%;
+}
+#propos img {
+    max-width: 20%;
+    margin: 20px;
+}
+
+#propos p {
+    color: #575757;
+    margin-top: 0px;
+}
+
+#propos a {
+    color: red;
+}
+#propos h3 {
+    margin: 0px;
+}
+#propos ul {
+    list-style: none;
+    padding: 0px;
+}
+#propos i {
+    margin: 10px;
+    transition: color 1s;
+}
+#propos i:hover {
+    color: firebrick;
+    cursor: pointer;
+}
+i.fa-caret-right {
+    color: red;
+}
+
+/* --------------------------- Competences */
+#competences {
+    background-color: #3B3B3B;
+    text-align: center;
+    color: seashell;
+    padding: 30px 0px;
+}
+
+.pourcentage {
+    font-size: 50px;
+    line-height: 40px;
+    padding: 0px 30px   ;
+}
+.progress-container {
+    width: 200px;
+    height: 15px;
+    background-color: #999;
+    border-radius: 10px;
+}
+.progress-value {
+    border-radius: 10px;
+    height: 15px;
+    background-color: #A3FFFF;
+    width: 0%;
+    transition: all 1s ease;
+  }
+
+ .label {
+    padding-bottom: 10px;   
+  }
+
+/* -------------------------------- Experiences Pro*/
+#xp-pro {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.xp-bloc {
+    background-color: #575757;
+    width: 30vw;
+    padding: 15px;
+    margin: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    transition: background-color 0.5s ease;
+}
+.xp-bloc:hover {
+    background-color: #727272;
+
+}
+.xp-bloc ul {
+    color: #c0bfbc;
+}
+.annee {
+    background-color: rgb(189, 68, 68);
+    color: white;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 120px;
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+}
+.titre-bloc {
+    text-align: right;
+    font-size: 25px;
+}
+.titre-bloc i {
+    margin: 15px;
+}
+.sous-titre-bloc {
+    text-align: right;
+    color: #999;
+}
+.nom-formation {
+    font-size: 20px;
+}
+
+#portfolios {
+    background-color: #E3E3E3;
+    text-align: center;
+    padding: 30px 0px;
+}
+#portfolios img {
+ width: 20%;
+ margin: 15px;
+ filter: saturate(0.1);
+ transition: filter 1s;
+}
+#portfolios img:hover {
+    filter: saturate(1);
+    cursor: pointer;
+   }

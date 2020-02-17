@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./Assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./Assets/progressbar/dist/progressbar.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="./Assets/img/favicon.ico"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one flex-center">
+            <img class="profile" src="./Assets/img/photo-profil.jpg" alt="Photo">
+            <h1>Thomas Bousquet</h1>
+        </div>
+        <div class="two">
+            <h2 class="centrer">Info</h2>
+            <div class="flex-center full-height">
+            <div class="sidebar-content">
+                <div class="flex-center">
+                        <i class="fa fa-birthday-cake fa-3x"></i>
+                        <span class="f20">10 mars 1990</span>
+                </div>
+                <div class="flex-center">
+                    <i class="fa fa-map-marker fa-3x"></i>
+                    <span class="f20">6 allée de la Xxxxxxxx <br> 78230 Le Pecq</span>
+                </div>
+                <div class="flex-center">
+                    <i class="fa fa-at fa-3x" aria-hidden="true"></i>
+                    <span class="f20">thomasxxxxxxx@gmail.com</span>
+                </div>
+                <div class="flex-center">
+                        <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                        <span class="f20">06-XX-XX-XX-XX</span>
+                </div>
+                <div class="flex-center">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        <span class="f20">github.com/TomBous</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="three">
+            <h2>Langages</h2>
+            <div class="flex-around">
+                <div id="html" class="bar-container">HTML</div>
+                <div id="css" class="bar-container">CSS</div>
+                <div id="php" class="bar-container">PHP</div>
+                <div id="js" class="bar-container">JS</div>
+            </div>
+        </div>
+        <div class="four">
+            <h2>Framework JS</h2>
+            <div class="flex-around">
+                <div id="angular" class="bar-container">ANGULAR</div>
+                <div id="react" class="bar-container">REACT</div>
+                <div id="vue" class="bar-container">VUE</div>
+                <div id="handlebars" class="bar-container">HANDLEBARS</div>
+            </div>
+        </div>
+        <div class="five">
+                <h2>Framework PHP</h2>
+                <div class="flex-around">
+                    <div id="laravel" class="bar-container">LARAVEL</div>
+                    <div id="symphony" class="bar-container">SYMPHONY</div>
+                    <div id="igniter" class="bar-container">CODEiGNITER</div>
+                </div>
+        </div>
+    </div>
+
+    <script>
+
+        const Bars = {
+            'html' : 0.9,
+            'css' : 0.80,
+            'php' : 0.30,
+            'js' : 0.45,
+            'angular' : 0.60,
+            'react' : 0.5,
+            'vue' : 0.10,
+            'handlebars' : 0.45,
+            'laravel' : 0.60,
+            'symphony' : 0.30,
+            'igniter' : 0.10
+        }
+
+        Object.keys(Bars).forEach(function (item) {
+
+
+            var bar = new ProgressBar.SemiCircle(document.getElementById(item), {
+            strokeWidth: 10,
+            color: '#FFEA82',
+            trailColor: '#eee',
+            trailWidth: 1,
+            easing: 'easeInOut',
+            duration: 1400,
+            svgStyle: null,
+            text: {
+                value: '',
+                alignToBottom: false
+            },
+            from: {color: '#f66151'},
+            to: {color: '#26a269'},
+            // Set default step function for all animate calls
+            step: (state, bar) => {
+                bar.path.setAttribute('stroke', state.color);
+                var value = Math.round(bar.value() * 100);
+                if (value === 0) {
+                bar.setText('');
+                } else {
+                bar.setText(value + "%");
+                }
+
+                bar.text.style.color = state.color;
+            }
+            });
+            bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+            bar.text.style.fontSize = '2rem';
+
+            bar.animate(Bars[item]);  // Number from 0.0 to 1.0
+        });
+    </script>
+
+</body>
+</html>

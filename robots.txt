@@ -1,0 +1,11 @@
+# Groupe 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+# Groupe 2
+User-agent: *
+Allow: /
+
+Sitemap: http://www.thomasbousquet.me/sitemap.xml
+
+

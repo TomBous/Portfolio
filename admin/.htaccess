@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Backend"
+AuthUserFile "/home/both7479/.htpasswds/public_html/admin/passwd"
+require valid-user
