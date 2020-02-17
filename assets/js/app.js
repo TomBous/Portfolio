@@ -49,8 +49,29 @@ window.onload = function() {
             };
             // SEND
 
+            i // SEND
+
             if (regexUsername.test(name) && regexEmail.test(email) && regexText.test(message)) {
-                console.log(`Bonjour ${name} nous vous répondrons à l'adresse ${email}.\n Votre message est : ${message}`);
+                envoyer.disabled = true;
+                envoyer.innerHTML = "En cours...";
+                var formdata = new FormData();
+                formdata.append("name", name);
+                formdata.append("email", email);
+                formdata.append("msg", message);
+                var ajax = new XMLHttpRequest();
+                ajax.open("POST", "send.php");
+                ajax.onreadystatechange = function() {
+                    if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success") {
+                            envoyer.innerHTML = "Envoyé !!";
+                        } else {
+                            envoyer.innerHTML = ajax.responseText;
+                            envoyer.disabled = false;
+                        }
+                    }
+                }
+            ajax.send(formdata);    
+
             }
 
         };

@@ -122,7 +122,24 @@
 
         <div id="section3-before"><img src="./assets/img/bg-mountain.png" alt=""></div>
         <section id="section3">
-            <h1>Un arbre qui tombe fait plus de bruit qu'une forêt qui pousse.</h1>
+            <h1 id="typewriter">Un arbre qui tombe fait plus de bruit qu'une forêt qui pousse.</h1>
+
+  <script src='./assets/js/typewritter.js'></script>
+  <script type='text/javascript'>
+    const typewriter = new Typewriter('#typewriter', {
+      loop: true,
+    });
+
+    typewriter.typeString('Hello World!')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('Strings can be removed')
+      .pauseFor(2500)
+      .deleteChars(7)
+      .typeString('<strong>altered!<strong>')
+      .pauseFor(2500)
+      .start();
+  </script>
         </section>
         <div id="section3-after"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 79.375" height="auto" width="100%"><path d="M0 0l258.536 52.917L508 0z" fill="#5e81ac"/></svg></div>
         <section id="section4">
