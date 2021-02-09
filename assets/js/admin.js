@@ -48,6 +48,10 @@ function submitClient() {
   var email = inputs[2].value;
 
  if (typeof nom !== 'undefined'&& typeof email !== 'undefined') {
+<<<<<<< HEAD
+=======
+    console.log('toto222222');
+>>>>>>> fdc5318b2e0ea844b1e8ae2a0d052b5879d60218
   var formdata = new FormData();
   formdata.append("prenom", prenom);
   formdata.append("nom", nom);

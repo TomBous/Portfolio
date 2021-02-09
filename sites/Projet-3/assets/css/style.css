@@ -126,6 +126,7 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+<<<<<<< HEAD
     #nav-me {
         display: none;
     }
@@ -140,6 +141,8 @@ header {
         font-size: 3rem !important;
         margin: 3rem 0;
     }
+=======
+>>>>>>> fdc5318b2e0ea844b1e8ae2a0d052b5879d60218
     #section3 {
         flex-flow: column wrap;
     }
@@ -164,6 +167,7 @@ header {
     #nav-boot {
         display: block;
     }
+<<<<<<< HEAD
     .navbar-brand,.navbar-toggler {
         font-size: 3.5rem !important;
         margin: 2rem 0;
@@ -224,3 +228,6 @@ header {
         width: 80vw;
     }
 }
+=======
+}
+>>>>>>> fdc5318b2e0ea844b1e8ae2a0d052b5879d60218
