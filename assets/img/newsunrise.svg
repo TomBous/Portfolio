@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="sunrise.svg"
+   sodipodi:docname="newsunrise.svg"
    inkscape:export-filename="C:\Users\tomat\OneDrive\Documents\0-SIMPLON\Portfolio\assets\img\rising-sun.png"
    inkscape:export-xdpi="96.164146"
    inkscape:export-ydpi="96.164146">
@@ -69,9 +69,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.33"
-     inkscape:cx="917.23983"
-     inkscape:cy="131.32019"
+     inkscape:zoom="0.62"
+     inkscape:cx="1060.466"
+     inkscape:cy="-62.012852"
      inkscape:document-units="px"
      inkscape:current-layer="svg8"
      inkscape:document-rotation="0"
@@ -1639,20 +1639,14 @@
      id="path1641"
      style="fill:#917c6f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37694502"
      d="m 1678.7887,85.695791 h -0.6883 v -5.295323 h 0.6883 z" />
-  <circle
+  <path
      style="display:inline;opacity:1;fill:#fffcd5;fill-opacity:0.25;stroke:none;stroke-width:1.00784993"
-     id="circle1649-6"
-     cx="1114.7819"
-     cy="-310.01505"
-     r="268.47079"
-     transform="scale(1,-1)" />
-  <circle
+     d="M 1114.7812 41.544922 A 268.47079 268.47079 0 0 0 846.58203 302.375 L 1382.8691 302.375 A 268.47079 268.47079 0 0 0 1114.7812 41.544922 z "
+     id="circle1649-6" />
+  <path
      style="display:inline;opacity:1;fill:#fffcd5;fill-opacity:1;stroke:none;stroke-width:0.88365614"
-     id="circle1649"
-     cx="1117.1858"
-     cy="-309.98666"
-     r="235.38806"
-     transform="scale(1,-1)" />
+     d="M 1117.1855 74.597656 A 235.38806 235.38806 0 0 0 882.11133 301.12109 L 1352.1309 301.12109 A 235.38806 235.38806 0 0 0 1117.1855 74.597656 z "
+     id="circle1649" />
   <path
      sodipodi:nodetypes="cccscscscscscscc"
      inkscape:connector-curvature="0"
