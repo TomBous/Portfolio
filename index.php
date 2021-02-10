@@ -59,8 +59,7 @@
                 </div>
                 <h1>Thomas Bousquet</h1>
               </div>
-              <h2>Web développeur</h2>
-              <h2> Full Stack</h2>
+              <h2>Web développeur<br>Full Stack</h2>
               <p>Je suis actuellement en recherche d'une alternance pour la formation "Concepteur développeur d'application" chez Simplon.</p>
               <a href="#section4">
                 <div class="button-container">
