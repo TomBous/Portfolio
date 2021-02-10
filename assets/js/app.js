@@ -22,7 +22,7 @@ function submitForm() {
   } else {
     inputs[0].parentNode.classList.add("valid");
   }
-  inputs[0].onclick = function() {
+  inputs[0].onclick = function () {
     inputs[0].parentNode.classList.remove("invalid");
     inputs[0].parentNode.classList.remove("valid");
   };
@@ -32,7 +32,7 @@ function submitForm() {
   } else {
     inputs[1].parentNode.classList.add("valid");
   }
-  inputs[1].onclick = function() {
+  inputs[1].onclick = function () {
     inputs[1].parentNode.classList.remove("invalid");
     inputs[1].parentNode.classList.remove("valid");
   };
@@ -42,7 +42,7 @@ function submitForm() {
   } else {
     inputs[2].parentNode.classList.add("valid");
   }
-  inputs[2].onclick = function() {
+  inputs[2].onclick = function () {
     inputs[2].parentNode.classList.remove("invalid");
     inputs[2].parentNode.classList.remove("valid");
   };
@@ -52,7 +52,7 @@ function submitForm() {
   } else {
     textarea.classList.add("valid");
   }
-  textarea.onclick = function() {
+  textarea.onclick = function () {
     textarea.classList.remove("invalid");
     textarea.classList.remove("valid");
   };
@@ -74,7 +74,7 @@ function submitForm() {
     var request = new XMLHttpRequest();
     request.open("POST", "./assets/php/send.php");
     request.send(formdata);
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function () {
       if (request.readyState == 4 && request.status == 200) {
         if (request.responseText == "success") {
           envoyer.innerHTML = "Reçu 5/5 !";
@@ -86,21 +86,44 @@ function submitForm() {
     };
   }
 }
+let formationObserver = new IntersectionObserver(
+  (observables) => {
+    // Initialisation de l'effet
+    document.getElementById("formations").classList.add("slideLeft");
+    document.getElementById("xp").classList.add("slideRight");
+    // logique de l'effet
+    for (let observable of observables) {
+      if (observable.isIntersecting) { // Si l'element est dans l'écran
+        if (observable.target.id === "formations") {
+          observable.target.classList.remove("slideLeft");
+        } else {
+          observable.target.classList.remove("slideRight");
+        }
+      }
+    }
+  },
+  { // Objet de configuration
+    threshold: 0.1, // Seuil d'intersection -> dès que 10% rentre dans l'écran
+  }
+);
+formationObserver.observe(document.getElementById("formations"))
+formationObserver.observe(document.getElementById("xp"))
 
-var upperAppear = function() {
+var upperAppear = function () {
   //Apparition bouton upper
   upper = document.getElementsByClassName("upper");
   var y = window.scrollY;
+
   if (y >= 200) {
     upper[0].classList.add("appear");
   } else {
     upper[0].classList.remove("appear");
   }
-  // Apparition block formations
-  if (y >= 1300) {
-    document.getElementById("formations").classList.add("slideLeft");
-    document.getElementById("xp").classList.add("slideRight");
-  }
+  /*   // Apparition block formations
+    if (y >= 1300) {
+      document.getElementById("formations").classList.add("slideLeft");
+      document.getElementById("xp").classList.add("slideRight");
+    } */
 };
 
 window.addEventListener("scroll", upperAppear);
@@ -115,7 +138,7 @@ function AnimateBarres2() {
   var top = this.scrollY;
   const hauteurEcran = window.innerHeight / 1.5;
   if (top + 350 > hauteurEcran * 2) {
-    Object.keys(Bars2).forEach(function(item) {
+    Object.keys(Bars2).forEach(function (item) {
       var bar = new ldBar(`#${item}`, {
         stroke: "data:ldbar/res,gradient(0,5,#9df,#9fd,#df9,#fd9)",
         "stroke-width": 10,
@@ -136,7 +159,7 @@ function AnimateBarres1() {
   var top = this.scrollY;
   const hauteurEcran = window.innerHeight / 1.5;
   if (top + 150 > hauteurEcran) {
-    Object.keys(Bars1).forEach(function(item) {
+    Object.keys(Bars1).forEach(function (item) {
       var bar = new ldBar(`#${item}`, {
         stroke: "data:ldbar/res,gradient(0,5,#9df,#9fd,#df9,#fd9)",
         "stroke-width": 10,
