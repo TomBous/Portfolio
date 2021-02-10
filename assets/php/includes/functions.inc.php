@@ -118,15 +118,8 @@ function getClients()
 
 
 
-<<<<<<< HEAD
 function addClient() {
     try {
-=======
-function addClient()
-{
-    try
-    {
->>>>>>> fdc5318b2e0ea844b1e8ae2a0d052b5879d60218
         $bdd = new Db;
         $connection = $bdd->connect();
     } catch (Exception $e) {
@@ -143,11 +136,7 @@ function addClient()
     return 'ok';
 }
 
-<<<<<<< HEAD
 if (!empty($_POST['nom']) && !empty($_POST['email'])) {
-=======
-if (!empty($_POST['prenom']) && !empty($_POST['email'])) {
->>>>>>> fdc5318b2e0ea844b1e8ae2a0d052b5879d60218
 
     if (addClient() === 'ok') {
         echo "|||||SUCCESS|||||";
